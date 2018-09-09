@@ -1,0 +1,43 @@
+{
+  "dataBinding": {
+    "/webapp/view/MasterPage1.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/DetailPage1.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/DetailPage2.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/DetailPage3.view.xml": {
+      "entitySet": ""
+    }
+  },
+  "generation": [
+    {
+      "templateId": "build_import_prototype",
+      "templateVersion": "1.0.0",
+      "dateTimeStamp": "Tue, 07 Aug 2018 09:29:47 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "hybrid": {
+    "FacadeConfig": {
+      "cordova-plugin-device-orientation": false,
+      "accelerometer": {},
+      "compass": {},
+      "bFacade": false
+    }
+  },
+  "hcpdeploy": {
+    "account": "p2000484430trial",
+    "name": "v2",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}

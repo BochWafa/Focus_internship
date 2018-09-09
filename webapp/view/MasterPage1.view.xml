@@ -1,0 +1,63 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+controllerName="com.sap.build.standard.untitledPrototype.controller.MasterPage1"
+xmlns="sap.m">
+	 <Page title="" showHeader="true" showFooter="true" showNavButton="false"  >
+	 	<Image src="../css/logo.png" densityAware="false" width = "320px" height= "100px"/>
+				<SearchField
+				id="searchField"
+				width="320px"
+				height = "70px"
+				placeholder="search for section ..."
+				enableSuggestions="true"
+				search="onSearch"
+				suggest="onSuggest"
+				suggestionItems="{
+					path: '/sections',
+					sorter: { path: 'sectionNumber' }
+				}" >
+				<suggestionItems items="{
+    				path   : '/sections'}">
+					<SuggestionItem text="{sectionNumber}" description=" : {path:'sectionName'} " />
+				</suggestionItems>
+			</SearchField>	
+		<content>
+			
+		<List mode="None" width="320.13000000px" headerText="Sections" footerText="" backgroundDesign="Transparent" showSeparators="All"
+				growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" id="list" noDataText="Aucune section est définie" items="{
+    				path   : '/sections'}">
+				
+				<infoToolbar/>
+				<headerToolbar>
+					<Toolbar>
+				<Title text="Sections:" level="H1" id="title"/>
+				<ToolbarSpacer />
+				<Button
+					icon="sap-icon://add"
+					press="addNewSection"/>
+			</Toolbar>	
+				</headerToolbar>
+				<items>
+				<StandardListItem title="{sectionNumber}" 
+                      description="{sectionName}" 
+                       icon="sap-icon://document-text"
+                       type="Navigation"
+                       press="goToSection"
+                       iconDensityAware= "false"
+                       iconInset="false"
+                       class="iconColor"
+                      />
+				</items>
+			</List>
+	
+		</content> 
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content/>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page> 
+
+</mvc:View>

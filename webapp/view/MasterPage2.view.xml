@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+controllerName="com.sap.build.standard.untitledPrototype.controller.MasterPage2"
+xmlns="sap.m">
+	 <Page title="" showHeader="true" showFooter="true" showNavButton="false">
+		<Image src="../css/logo.png" densityAware="false" width = "320px" height= "70px"/>
+		<content>
+		
+		</content> 
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+				<content/>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page> 
+
+</mvc:View>

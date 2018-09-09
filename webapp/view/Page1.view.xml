@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page1" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page showHeader="false">
+		<content>
+			<layout:Grid defaultIndent="L0 M0 S0" defaultSpan="L3 M6 S12" position="Left" width="100%" containerQuery="false" hSpacing="1" vSpacing="1"
+				visible="true" class="sapUiSmallMarginTop">
+				<layout:content>
+					<GenericTile header="Génération automatique des fichiers YAML" subheader="" frameType="OneByOne" press="_onGenericTilePress">
+						<tileContent/>
+					</GenericTile>
+					<GenericTile header="Validation des fichiers YAML" subheader="" frameType="OneByOne" press="_onGenericTilePress1">
+						<tileContent/>
+					</GenericTile>
+				</layout:content>
+			</layout:Grid>
+		</content>
+	</Page>
+</mvc:View>

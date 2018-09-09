@@ -1,0 +1,59 @@
+<mvc:View 
+	controllerName="com.sap.build.standard.untitledPrototype.controller.DetailPage2"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" 
+	>
+	<Page title="Génération automatique des fichiers de configuration YAML" showHeader="true" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress" background="List" floatingFooter="true" id="page"
+	class="whiteBack">
+		<Panel width="auto" accessibleRole="Region" id="principalPanel">
+		<content>
+		
+				<form:Form width="100%" editable="true" visible="true" id="Form" >
+				<form:title>
+					<core:Title text="{sectionName>/sectionName}" level="H2" icon="sap-icon://write-new-document" id="Title1"/>
+				</form:title>
+				<form:formContainers>
+					<form:FormContainer visible="true">
+						<form:formElements>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Nom de la section" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<Input type="Text" showValueHelp="false" enabled="true" visible="true" width="200px" valueHelpOnly="false" maxLength="0" valueLiveUpdate="true" id="name"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Tables" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<Button icon ="sap-icon://sys-add" size="35px" height="48px" width="48px" visible="true" press="addTable"/>
+								</form:fields>
+							</form:FormElement>
+						</form:formElements>
+						<form:title/>
+					</form:FormContainer>
+				
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+				</form:layout>
+			</form:Form>
+
+		
+		</content>
+		</Panel>
+		<footer>
+			<OverflowToolbar width="100%" height="auto" design="Auto" enabled="true" visible="true">
+					<ToolbarSpacer width=""/>
+					<Button text="Generate YAML" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="goToResult" type="Accept"/>
+					<Button text="Reset"  iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press= "resetSection" type="Reject"/>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page>
+</mvc:View>

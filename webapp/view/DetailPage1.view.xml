@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.DetailPage1" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page title="Menu" showHeader="true" showFooter="true" showNavButton="false" PageBackgroundDesign="Solid">
+		<content>
+			
+			<layout:Grid defaultIndent="L0 M0 S0" defaultSpan="L3 M6 S12" position="Left" width="100%" containerQuery="false" hSpacing="1" vSpacing="1"
+				visible="true">
+				<layout:content>
+					<GenericTile header="Génération automatique des fichiers de configuration YAML" subheader="" frameType="TwoByOne"
+						press="_onGenericTilePress" class="tile">
+						<tileContent/>
+					</GenericTile>
+					<GenericTile header="Validation d'un texte YAML" subheader="" frameType="TwoByOne" press="_onGenericTilePress1" class="tile">
+						<tileContent/>
+					</GenericTile>
+				</layout:content>
+			</layout:Grid> 
+		</content>
+		
+		<headerContent/>
+	</Page>
+</mvc:View>

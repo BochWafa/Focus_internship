@@ -1,0 +1,32 @@
+.value30 {
+	  margin-left: 30px
+}
+.myBackgroundStyle {
+/* background-color : #3f5161;*/
+}
+.iconColor {
+	color: white;
+	background: white;
+}
+.tile{
+background-color: #FFA100;
+}
+.backgroundImage {
+font-size:10em;
+/*background: url(http://i.imgur.com/2cOaJ.png);*/
+background-attachment: local;
+background-repeat: no-repeat;
+padding-left: 35px;
+padding-top: 10px;
+border-color:#ccc ;
+border-width: 30px;
+}
+.blueFont {
+    color: red !important;
+    font-size: 24px !important;
+}
+.whiteBack {
+background: url(../lib/background.png);
+}
+
+	

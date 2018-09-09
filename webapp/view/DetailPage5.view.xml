@@ -1,0 +1,16 @@
+<mvc:View 
+	controllerName="com.sap.build.standard.untitledPrototype.controller.DetailPage5"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" 
+	>
+	<Page title="Menu" showHeader="true" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+		<content>
+			
+		</content>
+	
+		<headerContent/>
+	</Page>
+</mvc:View>
